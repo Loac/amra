@@ -3,10 +3,14 @@ class Mission
 {
 	addOns[]=
 	{
-		"a3_map_stratis"
+		"a3_map_stratis",
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f"
 	};
 	addOnsAuto[]=
 	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
 		"a3_map_stratis"
 	};
 	randomSeed=1339749;
@@ -27,6 +31,44 @@ class Mission
 		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1991.0592,6.038064,5800.2578};
+					id=0;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1999.0278,6.3273816,5800.4092};
+			name="freeze blue";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorWEST";
+			fillName="SolidBorder";
+			a=20;
+			b=20;
+			drawBorder=1;
+		};
 	};
 };
 class Intro

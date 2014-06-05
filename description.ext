@@ -6,4 +6,5 @@ onLoadMission = "$STR_OEC_onLoadMission";
 author = "Loac";
 
 #include "configs\cfgHeader.hpp"
+#include "configs\cfgFunctions.hpp"
 #include "configs\cfgParams.hpp"

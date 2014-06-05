@@ -1,9 +1,10 @@
 class CfgFunctions
 {
     // Most used functions in different missions.
-    class lc {
-        class lc
+    class amra {
+        class amra
         {
+            class broadcast {};
             class setEnvironment {};
         };
     };
