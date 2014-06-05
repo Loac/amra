@@ -1,0 +1,9 @@
+enableDebugConsole = 2;
+allowFunctionsLog = 1;
+
+onLoadName = "Amra";
+onLoadMission = "$STR_OEC_onLoadMission";
+author = "Loac";
+
+#include "configs\cfgHeader.hpp"
+#include "configs\cfgParams.hpp"
