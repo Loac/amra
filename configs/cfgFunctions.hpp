@@ -7,6 +7,7 @@ class CfgFunctions
             class broadcast {};
             class broadcastClient {};
             class setEnvironment {};
+            class unitsInTrigger {};
         };
     };
 };
