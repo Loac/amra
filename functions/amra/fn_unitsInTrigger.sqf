@@ -6,7 +6,7 @@
         Get all units in marker or trigger area.
 
     Example:
-        ["BLUE MARKER"] call amra_fnc_unitsInTrigger;
+        _units = ["BLUE MARKER"] call amra_fnc_unitsInTrigger;
 */
 
 private [

@@ -8,6 +8,9 @@ class CfgFunctions
             class broadcastClient {};
             class setEnvironment {};
             class unitsInTrigger {};
+            class freeze {};
+            class freezeTrigger {};
+            class fade {};
         };
     };
 };

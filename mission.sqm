@@ -43,7 +43,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1991.0592,6.038064,5800.2578};
+					position[]={1909.321,5.5,5822.0962};
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -59,14 +59,15 @@ class Mission
 		items=1;
 		class Item0
 		{
-			position[]={1999.0278,6.3273816,5800.4092};
-			name="freeze blue";
-			markerType="ELLIPSE";
+			position[]={1913.3546,5.5,5820.457};
+			name="blue";
+			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorWEST";
 			fillName="SolidBorder";
-			a=20;
-			b=20;
+			a=13;
+			b=11;
+			angle=12.5178;
 			drawBorder=1;
 		};
 	};

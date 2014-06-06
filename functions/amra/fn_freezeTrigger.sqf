@@ -3,7 +3,10 @@
         Amra.
 
     Description:
-        Init freeze timer.
+        Freeze all units in trigger area.
+
+    Example:
+        ["blue"] call amra_fnc_freezeTrigger;
 
     Скрипт получает имя маркера.
     Определяет всех игроков, находящиеся внутри этого маркера.
@@ -13,20 +16,16 @@
     С истичением таймера отправляет команду "анфриз".
 */
 
-// Get marjer name.
-_marker = _this select 0;
+// Get marker name.
+_marker = [_this, 0, ""] call BIS_fnc_param;
 
-waitUntil {
-    sleep 1;
+// Get freeze time.
+_time = [_this, 1, ""] call BIS_fnc_param;
 
-    // Decrease value timer and publich it.
-    [["freezeTime", freezeTime - 1]] call amra_fnc_broadcast;
+// Get units into marker area.
+_units = [_marker] call amra_fnc_unitsInTrigger;
 
-    // Skip freeze time if both sides agree.
-    if (freezeTime > 5 and outpostReady and assaultReady) then {
-        freezeTime = 5;
-    };
-
-    // Wait for timer is over or both sides is ready.
-    freezeTime < 0;
-};
+// Sent each unit command "freeze".
+{
+    [_marker, "amra_fnc_freeze"] spawn BIS_fnc_MP;
+} forEach _units;
