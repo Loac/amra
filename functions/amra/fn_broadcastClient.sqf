@@ -7,16 +7,23 @@
 
     See:
         setVariable
-        publicVariable
+        publicVariableClient
 
     Example:
-        [clientID, ["missionComplete", true], ["blueTimer", 0]] call lc_fnc_broadcast;
+        [clientID, ["missionComplete", true], ["blueTimer", 0]] call amra_fnc_broadcastClient;
 */
 
 private [
     "_name",
-    "_value"
+    "_value",
+    "_clientID",
+    "_variables"
 ];
+
+// Get first parameter.
+_clientID = _this call BIS_fnc_arrayPop;
+// Other it's variables for sent.
+_variables = _this;
 
 {
     _name = _x select 0;
@@ -29,6 +36,6 @@ private [
     };
 
     // Broadcast variable.
-    publicVariable _name;
+    _clientID publicVariableClient _name;
 
-} forEach _this;
+} forEach _variables;

@@ -5,6 +5,7 @@ class CfgFunctions
         class amra
         {
             class broadcast {};
+            class broadcastClient {};
             class setEnvironment {};
         };
     };

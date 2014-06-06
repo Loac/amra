@@ -10,7 +10,7 @@
         publicVariable
 
     Example:
-        [["missionComplete", true], ["blueTimer", 0]] call lc_fnc_broadcast;
+        [["missionComplete", true], ["blueTimer", 0]] call amra_fnc_broadcast;
 */
 
 private [

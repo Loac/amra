@@ -6,7 +6,7 @@
         Set environment: fog, day time and etc.
 
     Example:
-        [["envFog", 1], ["envOvercast", 1]] call lc_fnc_setEnvironment;
+        [["envFog", 1], ["envOvercast", 1]] call amra_fnc_setEnvironment;
 */
 
 private [
