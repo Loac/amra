@@ -21,7 +21,8 @@ private [
 ];
 
 // Get first parameter.
-_clientID = _this call BIS_fnc_arrayPop;
+_clientID = _this call BIS_fnc_arrayShift;
+
 // Other it's variables for sent.
 _variables = _this;
 
