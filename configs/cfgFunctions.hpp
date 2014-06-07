@@ -11,6 +11,7 @@ class CfgFunctions
             class freeze {};
             class freezeTrigger {};
             class fade {};
+            class timeToTimer {};
         };
     };
 };
